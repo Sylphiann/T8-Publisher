@@ -15,3 +15,9 @@ Favian Naufal - **2006597802**
 ---
 ### Running RabbitMQ
 ![Running RabbitMQ](image.png)
+
+---
+### Sending and processing event
+![Sending and processing event](image-1.png)
+
+The screen capture above shows that the five messages were succesfully sent by the publisher (by running the program with `cargo run`), while the subscriber also got all of those five messages succesfully through an event listener. As one can see, the messages were sent through the amqp protocol within the same machine and port (localhost:5672).
