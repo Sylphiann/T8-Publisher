@@ -11,3 +11,7 @@ Favian Naufal - **2006597802**
 **Q** : The url of: `amqp://guest:guest@localhost:5672` is the same as in the subscriber program, what does it mean? 
 
 **A** : since the method that uses the same string is `new_queue_publisher()` instead of `new_queue_listener()` like the one in the Subscriber's codebase, it should mean that it would publish messages out of its stack using the url it was provided within its parameter. Since it's using the same url as the one in the Subscriber's codebase, it should mean the message to be sent was done within the same protocol (`amqp`), the same credentials (`guest:guest`) and in the same machine (`localhost`) and its port (`5672`).
+
+---
+### Running RabbitMQ
+![Running RabbitMQ](image.png)
