@@ -21,3 +21,11 @@ Favian Naufal - **2006597802**
 ![Sending and processing event](image-1.png)
 
 The screen capture above shows that the five messages were succesfully sent by the publisher (by running the program with `cargo run`), while the subscriber also got all of those five messages succesfully through an event listener. As one can see, the messages were sent through the amqp protocol within the same machine and port (localhost:5672).
+
+---
+### Monitoring chart based on publisher
+![Monitoring chart based on publisher](image-2.png)
+
+It was shown in the screen capture above that the message broker RabbitMQ accepts and forwards messages, as it records the transactions happened within the chart.
+
+On the top right of the screen also show that the charts update for every 5 seconds, which means that there are 5 messages that was sent in each of those two spikes period as it was shown on the *1.0/s* peak of the spike on the chart.
